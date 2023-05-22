@@ -144,7 +144,16 @@ document.addEventListener("keyup", function (e) {
       a = a / b;
       break;
   }
-  finish = true;
+
   out.textContent = a;
   console.table(a, b, sing);
+});
+document.addEventListener("keyup", function (e) {
+  if (e.key == "Backspace") {
+    a = "";
+    b = "";
+    sing = "";
+    finish = "";
+    out.textContent = 0;
+  }
 });
